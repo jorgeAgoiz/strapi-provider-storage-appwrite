@@ -35,7 +35,6 @@ npm install strapi-provider-storage-appwrite --save
 - `providerOptions.apiUrl` RESTful endpoint to manage your Appwrite project.
 - `providerOptions.projectId` ID of your Appwrite project.
 - `providerOptions.bucketId` ID of your Appwrite bucket.
-- `providerOptions.directory` directory inside the bucket where you want to store your files.
 - `sizeLimit` maximum size limit for your files on bytes.
 
 See the [documentation about using a provider](https://docs.strapi.io/developer-docs/latest/plugins/upload.html#using-a-provider) for information on installing and using a provider. To understand how environment variables are used in Strapi, please refer to the [documentation about environment variables](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/configurations/optional/environment.html#environment-variables).
@@ -54,7 +53,6 @@ module.exports = ({ env }) => ({
         apiUrl: env("APPWRITE_API_ENDPOINT"),
         projectId: env("APPWRITE_PROJECT_ID"),
         bucketId: env("APPWRITE_BUCKET_ID"),
-        directory: env("APPWRITE_BUCKET_DIRECTORY"),
       },
       sizeLimit: 1000000000,
       actionOptions: {
@@ -88,7 +86,8 @@ module.exports = [
             "'self'",
             "data:",
             "blob:",
-            env("APPWRITE_API_ENDPOINT"),
+            env("APPWRITE_API_DIRECTIVE"),
+            // Example: "https://cloud.appwrite.io"
           ],
         },
       },
