@@ -1,0 +1,23 @@
+{
+  "name": "strapi-provider-storage-appwrite",
+  "version": "1.0.0",
+  "description": "Appwrite storage provider for Strapi V4",
+  "keywords": [
+    "appwrite",
+    "strapi",
+    "strapi-provider",
+    "appwrite-provider",
+    "storage",
+    "provider"
+  ],
+  "license": "MIT",
+  "author": "Jorge Agoiz Pedraja",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/core": "7.24.4",
+    "node-appwrite": "12.0.1"
+  }
+}
