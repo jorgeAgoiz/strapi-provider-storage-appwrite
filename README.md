@@ -1,8 +1,8 @@
 # strapi-provider-storage-appwrite
 
 <div>
-  <img title="Appwrite" alt="Appwrite logo" src="https://seeklogo.com/images/A/appwrite-logo-D33B39992A-seeklogo.com.png" width="160px" height="120px" />
-  <img title="Strapi" alt="Strapi logo" src="https://seeklogo.com/images/S/strapi-icon-logo-2E03188067-seeklogo.com.png" width="120px" height="120px" />
+  <img title="Appwrite" alt="Appwrite logo" src="assets/logo-appwrite.png" width="140px" height="130px" />
+  <img title="Strapi" alt="Strapi logo" src="assets/strapi-logo.png" width="140px" height="140px" />
 </div>
 
 
